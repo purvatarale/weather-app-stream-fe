@@ -13,6 +13,12 @@ This project emphasizes **clean UI, smooth UX, and robust API integration**, usi
 
 ---
 
+## 🔗 Live Demo
+
+👉 **[View Live Demo](https://weather-app-stream-fe.vercel.app/)**
+
+---
+
 ## ✨ Features
 
 - **Real-time chat UI**
