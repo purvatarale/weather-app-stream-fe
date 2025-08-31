@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --background: rgb(255, 255, 255);
+    --foreground: rgb(2, 8, 23);
+    --card: rgb(255, 255, 255);
+    --card-foreground: rgb(2, 8, 23);
+    --popover: rgb(255, 255, 255);
+    --popover-foreground: rgb(2, 8, 23);
+    --primary: rgb(0, 53, 95);
+    --primary-foreground: rgb(255, 255, 255);
+    --secondary: rgb(241, 245, 249);
+    --secondary-foreground: rgb(15, 23, 42);
+    --muted: rgb(241, 245, 249);
+    --muted-foreground: rgb(100, 116, 139);
+    --accent: rgb(255, 248, 225);
+    --accent-foreground: rgb(133, 91, 0);
+    --destructive: rgb(239, 68, 68);
+    --destructive-foreground: rgb(255, 255, 255);
+    --border: rgb(226, 232, 240);
+    --input: rgb(226, 232, 240);
+    --ring: rgb(242, 183, 0);
+    --chart-1: rgb(242, 183, 0);
+    --chart-2: rgb(0, 53, 95);
+    --chart-3: rgb(51, 65, 85);
+    --chart-4: rgb(100, 116, 139);
+    --chart-5: rgb(148, 163, 184);
+    --sidebar: rgb(248, 250, 252);
+    --sidebar-foreground: rgb(2, 8, 23);
+    --sidebar-primary: rgb(0, 53, 95);
+    --sidebar-primary-foreground: rgb(255, 255, 255);
+    --sidebar-accent: rgb(255, 248, 225);
+    --sidebar-accent-foreground: rgb(133, 91, 0);
+    --sidebar-border: rgb(226, 232, 240);
+    --sidebar-ring: rgb(242, 183, 0);
+    --font-sans: Poppins;
+    --font-serif: Poppins;
+    --font-mono: Poppins;
+    --radius: 0.5rem;
+    --shadow-2xs: 0px 2px 4px 0px hsl(0 0% 0% / 0.05);
+    --shadow-xs: 0px 2px 4px 0px hsl(0 0% 0% / 0.05);
+    --shadow-sm: 0px 2px 4px 0px hsl(0 0% 0% / 0.10), 0px 1px 2px -1px hsl(0 0% 0% / 0.10);
+    --shadow: 0px 2px 4px 0px hsl(0 0% 0% / 0.10), 0px 1px 2px -1px hsl(0 0% 0% / 0.10);
+    --shadow-md: 0px 2px 4px 0px hsl(0 0% 0% / 0.10), 0px 2px 4px -1px hsl(0 0% 0% / 0.10);
+    --shadow-lg: 0px 2px 4px 0px hsl(0 0% 0% / 0.10), 0px 4px 6px -1px hsl(0 0% 0% / 0.10);
+    --shadow-xl: 0px 2px 4px 0px hsl(0 0% 0% / 0.10), 0px 8px 10px -1px hsl(0 0% 0% / 0.10);
+    --shadow-2xl: 0px 2px 4px 0px hsl(0 0% 0% / 0.25);
+    --tracking-normal: 0rem;
+    --spacing: 0.25rem;
+}
+
+.dark {
+    --background: rgb(10, 16, 20);
+    --foreground: rgb(248, 250, 252);
+    --card: rgb(0, 0, 0);
+    --card-foreground: rgb(248, 250, 252);
+    --popover: rgb(0, 0, 0);
+    --popover-foreground: rgb(248, 250, 252);
+    --primary: rgb(0, 90, 158);
+    --primary-foreground: rgb(255, 255, 255);
+    --secondary: rgb(51, 65, 85);
+    --secondary-foreground: rgb(248, 250, 252);
+    --muted: rgb(30, 41, 59);
+    --muted-foreground: rgb(148, 163, 184);
+    --accent: rgb(54, 43, 0);
+    --accent-foreground: rgb(242, 183, 0);
+    --destructive: rgb(143, 29, 29);
+    --destructive-foreground: rgb(248, 250, 252);
+    --border: rgb(29, 40, 51);
+    --input: rgb(29, 40, 51);
+    --ring: rgb(0, 90, 158);
+    --chart-1: rgb(242, 183, 0);
+    --chart-2: rgb(0, 90, 158);
+    --chart-3: rgb(226, 232, 240);
+    --chart-4: rgb(148, 163, 184);
+    --chart-5: rgb(51, 65, 85);
+    --sidebar: rgb(0, 0, 0);
+    --sidebar-foreground: rgb(248, 250, 252);
+    --sidebar-primary: rgb(0, 90, 158);
+    --sidebar-primary-foreground: rgb(255, 255, 255);
+    --sidebar-accent: rgb(54, 43, 0);
+    --sidebar-accent-foreground: rgb(242, 183, 0);
+    --sidebar-border: rgb(29, 40, 51);
+    --sidebar-ring: rgb(0, 90, 158);
+    --font-sans: Poppins;
+    --font-serif: Poppins;
+    --font-mono: Poppins;
+    --radius: 0.5rem;
+    --shadow-2xs: 0px 2px 4px 0px hsl(0 0% 0% / 0.05);
+    --shadow-xs: 0px 2px 4px 0px hsl(0 0% 0% / 0.05);
+    --shadow-sm: 0px 2px 4px 0px hsl(0 0% 0% / 0.10), 0px 1px 2px -1px hsl(0 0% 0% / 0.10);
+    --shadow: 0px 2px 4px 0px hsl(0 0% 0% / 0.10), 0px 1px 2px -1px hsl(0 0% 0% / 0.10);
+    --shadow-md: 0px 2px 4px 0px hsl(0 0% 0% / 0.10), 0px 2px 4px -1px hsl(0 0% 0% / 0.10);
+    --shadow-lg: 0px 2px 4px 0px hsl(0 0% 0% / 0.10), 0px 4px 6px -1px hsl(0 0% 0% / 0.10);
+    --shadow-xl: 0px 2px 4px 0px hsl(0 0% 0% / 0.10), 0px 8px 10px -1px hsl(0 0% 0% / 0.10);
+    --shadow-2xl: 0px 2px 4px 0px hsl(0 0% 0% / 0.25);
+}
+
+body {
+    letter-spacing: var(--tracking-normal);
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+
+    body {
+        @apply bg-background text-foreground;
+        font-family:  'Montserrat', sans-serif;
+    }
+}
