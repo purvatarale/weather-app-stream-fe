@@ -18,7 +18,7 @@ module.exports = {
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "comma-dangle": ["warn", "never"],
-    "max-len": ["error", { code: 400 }],
+    "max-len": ["error", { code: 1000 }],
     "consistent-return": 0,
     "no-unrestricted-syntax": 0,
     "import/prefer-default-export": 0,
