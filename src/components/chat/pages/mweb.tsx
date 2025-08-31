@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
-import { Trash } from "lucide-react";
+import { Menu, Trash } from "lucide-react";
 import MessageList, { UIMessage } from "@/components/chat/messageList";
 import MessageInput from "@/components/chat/messageInput";
 import { Button } from "@/components/ui/button";
@@ -157,7 +157,9 @@ export default function ChatPageMobile() {
         <div className="flex items-center justify-between border-b p-3 ">
           <Sheet>
             <SheetTrigger>
-              <Button>Hi</Button>
+              <Button>
+                <Menu />
+              </Button>
             </SheetTrigger>
             <SheetContent side={"left"}>
               <Button onClick={handleNewChat} className="mb-3">
