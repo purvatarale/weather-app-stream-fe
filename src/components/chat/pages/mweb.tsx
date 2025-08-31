@@ -5,12 +5,6 @@ import MessageList, { UIMessage } from "@/components/chat/messageList";
 import MessageInput from "@/components/chat/messageInput";
 import { Button } from "@/components/ui/button";
 import { useChatStore } from "@/store/chatStore";
-import {
-  Sidebar,
-  SidebarContent,
-  SidebarProvider,
-  SidebarTrigger,
-} from "@components/ui/sidebar";
 import { Sheet, SheetContent, SheetTrigger } from "@components/ui/sheet";
 
 export default function ChatPageMobile() {
